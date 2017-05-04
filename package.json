@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "node_modules/.bin/tape **/*.spec.js",
+    "tdd": "nodemon --exec yarn test | faucet",
+    "test:debug": ""
+  },
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.inrange": "^3.3.6",
+    "pixi.js": "^4.5.1"
+  },
+  "devDependencies": {
+    "faucet": "^0.0.1",
+    "tape": "^4.6.3",
+    "standard": "^10.0.2"
+  }
+}

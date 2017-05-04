@@ -1,0 +1,76 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:jasmine/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "amd": true,
+    "jasmine": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+        "jasmine"
+  ],
+  "rules": {
+    // Code issues - should be resolved in next stage
+    "no-unused-vars": 2,
+
+    // Style issues - nice to have
+    "camelcase": 2,
+    "key-spacing": 2,
+    "no-shadow": 2,
+    "eol-last": 0,
+    "no-trailing-spaces": 2,
+    "no-multi-spaces": 2,
+    "one-var": [2, "always"],
+    "indent": [2, 4, {"SwitchCase": 1}],
+    "semi": [2, "always"],
+    "space-before-function-paren": [2, "always"],
+    "quotes": [2, "double"],
+    "consistent-this": [2, "self"],
+    "space-in-parens": [2, "never"],
+    "space-infix-ops": 2,
+    "array-bracket-spacing": [2, "never"],
+    "comma-spacing": [2, {"before": false, "after": true}],
+    "comma-dangle": [2, "never"],
+    "keyword-spacing": [2, {"before": true, "after": true}],
+    "no-multiple-empty-lines": 2,
+    "no-spaced-func": 2,
+    "space-before-blocks": 2,
+    "eqeqeq": 0,
+    // Disabled on purpose
+    "no-underscore-dangle" : 0,
+
+    "jasmine/named-spy": 1,
+    "jasmine/no-focused-tests": 2,
+    "jasmine/no-disabled-tests": 1,
+    "jasmine/no-suite-dupes": [1, "branch"],
+    "jasmine/no-spec-dupes": [1, "branch"],
+    "jasmine/missing-expect": 1,
+    "jasmine/no-suite-callback-args": 2,
+    "jasmine/valid-expect": 1,
+    "jasmine/no-assign-spyon": 1,
+    "jasmine/no-unsafe-spy": 1,
+    "jasmine/no-global-setup": 2,
+    "jasmine/no-expect-in-setup-teardown": 1
+  },
+  "settings": {
+    "application": {
+      // names of objects which extends from backbone/marionette objects.
+      "Object": ["Marionette.LayoutView", "Marionette.ItemView", "Marionette.CompositeView", "Marionette.Object",
+      "Marionette.CollectionView", "Controller", "Marionette.Behavior", "ProcessController", "InvestmentsController",
+      "PreModel"]
+    },
+    "base-controller": {
+      "Object": ["BaseController"]
+    },
+    "controller": {
+      "Object": ["Controller"]
+    }
+  }
+}
